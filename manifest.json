@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Scriptura Chrome Extension",
+    "version": "1.0.0",
+    "description": "A Chrome extension to search for Bible verses conveniently",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": ["storage"],
+    "web_accessible_resources": [
+        {
+            "resources": ["xlsx.full.min.js", "kjv.xlsx", "jquery-3.6.0.min.js", "bootstrap.bundle.min.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
